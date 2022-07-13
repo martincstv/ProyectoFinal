@@ -1,0 +1,10 @@
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\bin\Debug\Datos.dll.config
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\bin\Debug\Datos.dll
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\bin\Debug\Datos.pdb
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\bin\Debug\Entidades.dll
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\bin\Debug\Entidades.pdb
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\obj\Debug\Datos.dll
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Datos\obj\Debug\Datos.pdb

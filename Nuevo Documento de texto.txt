@@ -1,0 +1,94 @@
+
+DECLARE @Salida int
+
+EXEC sp_LoginUsuario 'Empleado', 'Empleado12', @Salida OUTPUT
+
+SELECT @Salida
+
+
+
+select u.UsuarioID
+	,u.Nombre
+	,u.RolID
+	,r.NombreRol
+	,p.SubMenuID
+	,s.NombreSubMenu
+	,m.MenuID
+	,m.NombreMenu
+	,p.EstadoActivo
+from Usuarios u
+inner join Roles r on u.RolID = r.RolID
+inner join Permisos p on r.RolID = p.RolID
+inner join SubMenus s on p.SubMenuID = s.SubMenuID
+inner join Menus m on s.MenuID = m.MenuID
+where u.UsuarioID = 1
+
+
+--MENUS
+select distinct m.*
+from Usuarios u
+inner join Roles r on u.RolID = r.RolID
+inner join Permisos p on r.RolID = p.RolID and p.EstadoActivo = 1
+inner join SubMenus s on p.SubMenuID = s.SubMenuID
+inner join Menus m on s.MenuID = m.MenuID
+where u.UsuarioID = 3
+
+
+
+--Submenus
+select distinct s.*
+from Usuarios u
+inner join Roles r on u.RolID = r.RolID
+inner join Permisos p on r.RolID = p.RolID and p.EstadoActivo = 1
+inner join SubMenus s on p.SubMenuID = s.SubMenuID
+inner join Menus m on s.MenuID = m.MenuID
+where u.UsuarioID = 3
+
+
+
+select * from Usuarios where UsuarioID = 1
+for xml path(''), root('Usuario')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT
+	(select vistasmenu.NombreMenu,vistasmenu.Icono,
+	
+			(select distinct s.NombreSubMenu, s.NombreFormulario
+			from Usuarios u
+			inner join Roles r on u.RolID = r.RolID
+			inner join Permisos p on r.RolID = p.RolID and p.EstadoActivo = 1
+			inner join SubMenus s on p.SubMenuID = s.SubMenuID
+			inner join Menus m on s.MenuID = m.MenuID
+			where u.UsuarioID = us.UsuarioID and m.MenuID = vistasmenu.MenuID
+	for xml path('SubMenu'),type) as 'DetalleMenu' 
+	
+	
+	
+	from
+	(
+	select distinct m.*
+	from Usuarios u
+	inner join Roles r on u.RolID = r.RolID
+	inner join Permisos p on r.RolID = p.RolID and p.EstadoActivo = 1
+	inner join SubMenus s on p.SubMenuID = s.SubMenuID
+	inner join Menus m on s.MenuID = m.MenuID
+	where u.UsuarioID = us.UsuarioID
+	) vistasmenu
+	for xml path('Menu'),type) as 'DetalleMenu' 
+	from Usuarios us
+	where UsuarioID = 1
+	for xml path(''), root('PERMISOS')

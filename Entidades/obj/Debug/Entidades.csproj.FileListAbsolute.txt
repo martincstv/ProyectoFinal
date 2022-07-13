@@ -1,0 +1,6 @@
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Entidades\bin\Debug\Entidades.dll
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Entidades\bin\Debug\Entidades.pdb
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Entidades\obj\Debug\Entidades.dll
+C:\Users\dev79\OneDrive\Escritorio\Martin_Karina_ProyectoFinal_PA2022\Entidades\obj\Debug\Entidades.pdb
