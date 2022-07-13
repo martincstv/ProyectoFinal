@@ -50,10 +50,26 @@ namespace Presentacion
 
                 menu.Items.Add(menuPadre);
             }
+
+            ToolStripMenuItem menuItemSalir = new ToolStripMenuItem();
+            menuItemSalir.Font = new System.Drawing.Font("Segoe UI", 11F, FontStyle.Bold);
+            string rutaImagen1 = Path.GetFullPath(Path.Combine(Application.StartupPath, @"../../") + @"\Iconos\salida.png");
+            menuItemSalir.Image = new Bitmap(rutaImagen1);
+    
+            menu.Items.Add(menuItemSalir);
             this.MainMenuStrip = menu;
             Controls.Add(menu);
-
+           
             CargarValoresIniciales();
+        }
+
+        private void ToolStripMenuItemSalir_Click(object sender, System.EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea cerrar sesión?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+
+                this.Close();
+            }
         }
 
         private void Click_en_Menu(object sender, System.EventArgs e)

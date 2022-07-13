@@ -120,6 +120,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Iconos\Reporte.png" />
+    <Content Include="Iconos\salida.png" />
     <Content Include="Iconos\Usuario.png" />
     <Content Include="Iconos\Venta.png" />
   </ItemGroup>
